@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "formulahendry.auto-rename-tag",
+        "naumovs.color-highlight",
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+    ]
+}
