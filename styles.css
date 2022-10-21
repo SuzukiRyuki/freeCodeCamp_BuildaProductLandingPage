@@ -1,0 +1,94 @@
+:root {
+  --site-header-background-color: #eeefff;
+  --site-background-color: #eeeeee;
+  --btn-background-color: #ffa500;
+  --strong-text-background-color: #dddddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--site-background-color);
+}
+
+body {
+  padding: 0 70px;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 0 30px;
+  background-color: var(--site-header-background-color);
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 75px;
+}
+
+#nav-bar {
+  font-weight: 400;
+}
+
+#nav-bar > ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#nav-bar > ul > li {
+  margin-left: 30px;
+}
+
+#nav-link {
+  text-decoration: none;
+}
+#header-img {
+  height: 100%;
+  max-width: 300px;
+}
+
+main {
+  margin-top: 75px; /*ナビゲーション分を下げる*/
+}
+
+#subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  max-width: 300px;
+  height: 35px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* アクセシビリティ用の隠しテキスト */
+.hidden-visual {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
