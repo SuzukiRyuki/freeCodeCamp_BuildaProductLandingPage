@@ -22,16 +22,20 @@
       </div>
       <nav id="nav-bar">
         <ul>
-          <li><a href="#Features" id="nav-link">Features</a></li>
-          <li><a href="#How_It_Works" id="nav-link">How It Works</a></li>
-          <li><a href="#Pricing" id="nav-link">Pricing</a></li>
+          <li><a href="#Features" class="nav-link">Features</a></li>
+          <li><a href="#How_It_Works" class="nav-link">How It Works</a></li>
+          <li><a href="#Pricing" class="nav-link">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main id="main">
       <aside>
         <h2 id="subtitle">Handcrafted,home-made masterpieces</h2>
-        <form action="https://www.freecodecamp.com/email-submit" method="post">
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+          id="form"
+        >
           <fieldset>
             <label for="email" id="form-label" class="hidden-visual"
               >Fill in your email</label
@@ -40,14 +44,15 @@
               type="email"
               id="email"
               placeholder="Enter your email address"
-              required
+              required="required"
+              name="email"
             />
-            <input type="button" value="GET STARTED" id="submit-button" />
+            <input type="submit" value="GET STARTED" id="submit" />
           </fieldset>
         </form>
       </aside>
-      <article id="product-features">
-        <section id="product-features-section">
+      <article id="Features">
+        <section id="product-features-section Features">
           <h2 class="hidden-visual">Features Details</h2>
           <div class="wrap-feature-detail">
             <div class="icon-wrap">
@@ -88,16 +93,17 @@
             </div>
           </div>
         </section>
-        <section id="product-video-section">
+        <section id="How_It_Works">
           <h2 class="hidden-visual">Product Video</h2>
           <video
             src="https://www.youtube.com/watch?v=y8Yv4pnO7qc"
             autoplay
             muted
             controls
+            id="video"
           ></video>
         </section>
-        <section id="product-prices-section">
+        <section id="Pricing">
           <h2 class="hidden-visual">Procuts Prices</h2>
           <div id="tenor_trombone" class="product-wrap">
             <div class="price-wrap">

@@ -1,11 +1,44 @@
 :root {
-  --site-header-background-color: #eeefff;
+  --site-header-background-color: #eeeeee;
   --site-background-color: #eeeeee;
   --btn-background-color: #fdaa02;
   --btn-hover-background-color: darkorange;
   --strong-text-background-color: #dddddd;
 }
 
+/* スマホ用 */
+@media screen and (max-width: 800px) {
+  /* headerのナビゲーションを調整 */
+  header {
+    flex-wrap: wrap;
+  }
+  #wrap-header-img {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+  }
+  #header-img {
+    margin: 0 auto;
+  }
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  #nav-bar > ul {
+    flex-direction: column;
+  }
+  #nav-bar > ul > li {
+    padding-bottom: 5px;
+  }
+  /* カードスタイルの横幅を調整 */
+  .product-wrap {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -27,20 +60,24 @@ main {
 /* ヘッダー部分 */
 header {
   width: 100%;
-  padding: 0 30px;
   background-color: var(--site-header-background-color);
-  opacity: 0.6;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   min-height: 75px;
 }
 
-#submit-button {
+#header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#submit {
   font-weight: 800;
   font-size: 1rem;
   background-color: var(--btn-background-color);
@@ -50,7 +87,7 @@ header {
   padding: 0 20px;
 }
 
-#submit-button:hover {
+#submit:hover {
   background-color: var(--btn-hover-background-color);
 }
 
@@ -70,9 +107,11 @@ header {
   margin-left: 30px;
 }
 
-#nav-link {
+.nav-link {
   text-decoration: none;
+  color: black;
 }
+
 #header-img {
   height: 100%;
   max-width: 300px;
@@ -104,7 +143,7 @@ input {
 }
 
 /* 商品説明部分 */
-#product-features {
+#Features {
   margin-top: 60px;
 }
 
@@ -139,19 +178,19 @@ input {
 }
 
 /* 動画のスタイル */
-#product-video-section {
+#How_It_Works {
   display: flex;
   justify-content: center;
   margin: 70px auto;
 }
 
-#product-video-section > video {
+#How_It_Works > video {
   width: 100%;
   max-width: 560px;
 }
 
 /* 商品の値段部分のスタイル */
-#product-prices-section {
+#Pricing {
   margin: 0 10px;
   display: flex;
   justify-content: space-between;
@@ -165,13 +204,6 @@ input {
   margin-right: auto;
 }
 
-/* スマホ用にカードスタイルの横幅を調整 */
-@media screen and (max-width: 800px) {
-  .product-wrap {
-    width: 100%;
-    max-width: 300px;
-  }
-}
 .price-wrap {
   text-align: center;
 }
