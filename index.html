@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
     <title>Product Landing Page</title>
   </head>
   <body>
@@ -43,38 +47,48 @@
         </form>
       </aside>
       <article id="product-features">
-        <h2 class="hidden-visual">Features Details</h2>
-        <div class="wrap-feature-detail">
-          <i></i>
-          <section>
-            <h2 class="title-feature-detail">Premium Matrials</h2>
-            <p class="feature-detail">
-              Our trombones use the shiniest brass which is sourced locally.
-              This will increase the longevity of your purchase.
-            </p>
-          </section>
-        </div>
-        <div class="wrap-feature-detail">
-          <i></i>
-          <section>
-            <h2 class="title-feature-detail">Fast Shipping</h2>
-            <p class="feature-detail">
-              We make sure you recieve your trombone as soon as we have finished
-              making it. We also provide free returns if you are not satisfied.
-            </p>
-          </section>
-        </div>
-        <div class="wrap-feature-detail">
-          <i></i>
-          <section>
-            <h2 class="title-feature-detail">Quality Assurance</h2>
-            <p class="feature-detail">
-              For every purchase you make, we will ensure there are no damages
-              or faults and we will check and test the pitch of your instrument.
-            </p>
-          </section>
-        </div>
-        <section>
+        <section id="product-features-section">
+          <h2 class="hidden-visual">Features Details</h2>
+          <div class="wrap-feature-detail">
+            <div class="icon-wrap">
+              <i class="fas fa-3x fa-fire icon"></i>
+            </div>
+            <div class="product-detail-wrap">
+              <h2 class="title-feature-detail">Premium Matrials</h2>
+              <p class="feature-detail">
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="wrap-feature-detail">
+            <div class="icon-wrap">
+              <i class="fas fa-3x fa-truck icon"></i>
+            </div>
+            <div class="product-detail-wrap">
+              <h2 class="title-feature-detail">Fast Shipping</h2>
+              <p class="feature-detail">
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="wrap-feature-detail">
+            <div class="icon-wrap">
+              <i class="fas fa-3x fa-battery-full icon"></i>
+            </div>
+            <div class="product-detail-wrap">
+              <h2 class="title-feature-detail">Quality Assurance</h2>
+              <p class="feature-detail">
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="product-video-section">
           <h2 class="hidden-visual">Product Video</h2>
           <video
             src="https://www.youtube.com/watch?v=y8Yv4pnO7qc"
@@ -83,44 +97,46 @@
             controls
           ></video>
         </section>
-        <section>
+        <section id="product-prices-section">
           <h2 class="hidden-visual">Procuts Prices</h2>
-          <div id="tenor_trombone" class="product">
-            <section>
-              <h2>Tenor TROMBONE</h2>
-              <div class="price">$600</div>
+          <div id="tenor_trombone" class="product-wrap">
+            <div class="price-wrap">
+              <div class="product-name">Tenor TROMBONE</div>
+              <h2 class="price">$600</h2>
               <ol>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum.</li>
                 <li>Lorem opsum dolor.</li>
                 <li>Lorem ipsum.</li>
               </ol>
-              <button class="btn">Select</button>
-            </section>
+              <button class="btn product-select-btn">Select</button>
+            </div>
           </div>
-          <div id="bass_trombone" class="product">
-            <section>
-              <h2>BASS TROMBONE</h2>
-              <div class="price">$900</div>
+          <div id="bass_trombone" class="product-wrap">
+            <div class="price-wrap">
+              <div class="product-name">BASS TROMBONE</div>
+              <h2 class="price">$900</h2>
               <ol>
                 <li>Lorem ipsum.</li>
                 <li>Lorem ipsum.</li>
                 <li>Lorem opsum dolor.</li>
                 <li>Lorem ipsum.</li>
               </ol>
-              <button class="btn">Select</button>
-            </section>
+              <button class="btn product-select-btn">Select</button>
+            </div>
           </div>
-          <div id="valve_trombone" class="product">
-            <h2>VALVE TROMBONE</h2>
-            <div class="price">$1200</div>
-            <ol>
-              <li>Plays similar to a Trmpet</li>
-              <li>Great for Jazz Bands</li>
-              <li>Lorem opsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
+          <div id="valve_trombone" class="product-wrap">
+            <div class="price-wrap">
+              <div class="product-name">VALVE TROMBONE</div>
+              <h2 class="price">$1200</h2>
+              <ol>
+                <li>Plays similar to a Trmpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem opsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+              <button class="btn product-select-btn">Select</button>
+            </div>
           </div>
         </section>
       </article>

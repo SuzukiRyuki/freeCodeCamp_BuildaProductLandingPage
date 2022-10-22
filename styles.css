@@ -1,7 +1,8 @@
 :root {
   --site-header-background-color: #eeefff;
   --site-background-color: #eeeeee;
-  --btn-background-color: #ffa500;
+  --btn-background-color: #fdaa02;
+  --btn-hover-background-color: darkorange;
   --strong-text-background-color: #dddddd;
 }
 
@@ -14,10 +15,16 @@ html {
 }
 
 body {
-  padding: 0 70px;
+  height: 100%;
+  margin: 0 0;
   font-family: "Lato", sans-serif;
 }
 
+main {
+  margin-top: 75px; /*ナビゲーション分を下げる*/
+}
+
+/* ヘッダー部分 */
 header {
   width: 100%;
   padding: 0 30px;
@@ -33,6 +40,21 @@ header {
   min-height: 75px;
 }
 
+#submit-button {
+  font-weight: 800;
+  font-size: 1rem;
+  background-color: var(--btn-background-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+#submit-button:hover {
+  background-color: var(--btn-hover-background-color);
+}
+
+/* ナビゲーション部分 */
 #nav-bar {
   font-weight: 400;
 }
@@ -56,8 +78,9 @@ header {
   max-width: 300px;
 }
 
-main {
-  margin-top: 75px; /*ナビゲーション分を下げる*/
+/* フォーム入力部分 */
+aside {
+  padding: 0 70px;
 }
 
 #subtitle {
@@ -78,6 +101,139 @@ input {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+/* 商品説明部分 */
+#product-features {
+  margin-top: 60px;
+}
+
+.wrap-feature-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+}
+
+.icon {
+  color: darkorange;
+}
+
+.product-detail-wrap {
+  flex: 1;
+}
+
+.title-feature-detail {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.feature-detail {
+  margin-top: 0;
+}
+
+/* 動画のスタイル */
+#product-video-section {
+  display: flex;
+  justify-content: center;
+  margin: 70px auto;
+}
+
+#product-video-section > video {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* 商品の値段部分のスタイル */
+#product-prices-section {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-wrap {
+  border: 1px solid;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* スマホ用にカードスタイルの横幅を調整 */
+@media screen and (max-width: 800px) {
+  .product-wrap {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.price-wrap {
+  text-align: center;
+}
+
+.product-name {
+  background-color: var(--strong-text-background-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 70px;
+}
+
+.price-wrap > ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.price-wrap > ol > li {
+  margin-bottom: 10px;
+}
+
+.product-select-btn {
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100px;
+  height: 40px;
+  background-color: var(--btn-background-color);
+  border: none;
+  outline: none;
+  margin: 20px 0;
+}
+
+.product-select-btn:hover {
+  background-color: var(--btn-hover-background-color);
+}
+
+/* footerのスタイル */
+footer {
+  text-align: right;
+  background-color: var(--strong-text-background-color);
+  padding-right: 20px;
+  margin-top: 40px;
+}
+footer > ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin: 10px 20px;
+}
+
+footer > ul > li {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+footer > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+footer > p {
+  margin: 0;
+  padding-bottom: 20px;
+  color: #444444;
 }
 
 /* アクセシビリティ用の隠しテキスト */
